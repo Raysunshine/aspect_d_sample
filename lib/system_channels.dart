@@ -21,30 +21,30 @@ void setupGlobalAppLifecycleListener() {
 }
 
 void setupGlobalKeyEventListener() {
-  SystemChannels.keyEvent.setMessageHandler((message) async {
-    /**
-     * {
-        "keyCode": 4,
-        "character": "\u0000",
-        "keymap": "android",
-        "plainCodePoint": 0,
-        "metaState": 0,
-        "flags": 520,
-        "source": 257,
-        "type": "key-up",
-        "deviceId": -1,
-        "codePoint": 0,
-        "scanCode": 0,
-        "repeatCount": 0
-        }
-     */
-    outputToLogcat(message ?? Object(), belongs: "keyEvent");
-    return message;
-  });
+  // SystemChannels.keyEvent.setMessageHandler((message) async {
+  //   /**
+  //    * {
+  //       "keyCode": 4,
+  //       "character": "\u0000",
+  //       "keymap": "android",
+  //       "plainCodePoint": 0,
+  //       "metaState": 0,
+  //       "flags": 520,
+  //       "source": 257,
+  //       "type": "key-up",
+  //       "deviceId": -1,
+  //       "codePoint": 0,
+  //       "scanCode": 0,
+  //       "repeatCount": 0
+  //       }
+  //    */
+  //   outputToLogcat(message ?? Object(), belongs: "keyEvent");
+  //   return message;
+  // });
 }
 
 void setupNavigationListener() {
-  // 可能需要搭配特定组件使用
+  // 路由相关(需要搭配特定组件使用)
   // SystemChannels.navigation.setMethodCallHandler((call) async {
   //   var arguments = call.arguments;
   //   var method = call.method;

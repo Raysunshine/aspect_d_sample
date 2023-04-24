@@ -35,6 +35,18 @@ class ProfileWidget extends StatelessWidget {
               onPressed: () => onAction(ProfileActionType.navigateToMessage),
               child: const Text("跳转到Message页面"),
             ),
+            Row(
+              children: [
+                const SizedBox(width: 30),
+                const Text("commonTextInputListener: "),
+                Expanded(
+                  child: TextField(
+                    controller: controller.textEditingController,
+                  ),
+                ),
+                const SizedBox(width: 30),
+              ],
+            ),
           ],
         ),
       ),

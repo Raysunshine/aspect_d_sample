@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_buried_dot/commonListener.dart';
 import 'package:flutter_buried_dot/data/flutter_group.dart';
 import 'package:flutter_buried_dot/navigation/app_routes.dart';
 import 'package:flutter_buried_dot/ui/home/home_action.dart';
@@ -13,7 +14,9 @@ class HomeLogic extends GetxController {
   void onInit() {
     count.value++;
 
-    textEditingController.addListener(_textEditingControllerListener);
+    textEditingController.addListener(
+      () => textEditingControllerListener(textEditingController),
+    );
 
     super.onInit();
   }
@@ -47,11 +50,9 @@ class HomeLogic extends GetxController {
 
   @override
   void onClose() {
-    textEditingController.removeListener(_textEditingControllerListener);
+    textEditingController.removeListener(
+      () => textEditingControllerListener(textEditingController),
+    );
     super.onClose();
-  }
-
-  void _textEditingControllerListener() {
-    var selection = textEditingController.selection;
   }
 }

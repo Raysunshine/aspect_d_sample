@@ -11,11 +11,11 @@ class MessageLogic extends GetxController {
   void onAction(MessageActionType messageActionType) {
     switch (messageActionType) {
       case MessageActionType.navigateToRootRoute:
-        navigateToRootRoute();
+        _navigateToRootRoute();
         break;
     }
   }
 
-  void navigateToRootRoute() =>
+  void _navigateToRootRoute() =>
       Get.until((route) => route.settings.name == AppRoutes.home);
 }

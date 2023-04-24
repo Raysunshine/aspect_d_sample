@@ -36,14 +36,16 @@ class HomeWidget extends StatelessWidget {
             ),
             Row(
               children: [
-                const Text("textInput测试: "),
+                const SizedBox(width: 30),
+                const Text("commonTextInputListener: "),
                 Expanded(
                   child: TextField(
                     controller: controller.textEditingController,
                   ),
                 ),
+                const SizedBox(width: 30),
               ],
-            )
+            ),
           ],
         ),
       ),

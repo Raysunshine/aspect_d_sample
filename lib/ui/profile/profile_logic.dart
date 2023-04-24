@@ -1,36 +1,51 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_buried_dot/commonListener.dart';
 import 'package:flutter_buried_dot/navigation/app_routes.dart';
 import 'package:flutter_buried_dot/ui/profile/profile_action.dart';
 import 'package:get/get.dart';
 
 class ProfileLogic extends GetxController {
+  var textEditingController = TextEditingController();
+
   @override
   onInit() {
+    textEditingController.addListener(
+      () => textEditingControllerListener(textEditingController),
+    );
     super.onInit();
   }
 
   onAction(ProfileActionType profileActionType) {
     switch (profileActionType) {
       case ProfileActionType.navigateUpWithoutAnything:
-        navigateUpWithoutAnything();
+        _navigateUpWithoutAnything();
         break;
       case ProfileActionType.navigateUpWithArguments:
-        navigateUpWithArguments();
+        _navigateUpWithArguments();
         break;
       case ProfileActionType.navigateToMessage:
-        navigateToProfile();
+        _navigateToProfile();
         break;
     }
   }
 
-  void navigateUpWithoutAnything() => Get.back();
+  void _navigateUpWithoutAnything() => Get.back();
 
-  void navigateUpWithArguments() {
+  void _navigateUpWithArguments() {
     var companyName = "南京先维";
     Get.back<String>(result: companyName);
   }
 
-  void navigateToProfile() => Get.offNamedUntil(
+  void _navigateToProfile() => Get.offNamedUntil(
         AppRoutes.message,
         (route) => true,
       );
+
+  @override
+  void onClose() {
+    textEditingController.removeListener(
+      () => textEditingControllerListener(textEditingController),
+    );
+    super.onClose();
+  }
 }
