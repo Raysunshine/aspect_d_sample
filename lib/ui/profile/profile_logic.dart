@@ -29,5 +29,8 @@ class ProfileLogic extends GetxController {
     Get.back<String>(result: companyName);
   }
 
-  void navigateToProfile() => Get.toNamed(AppRoutes.message);
+  void navigateToProfile() => Get.offNamedUntil(
+        AppRoutes.message,
+        (route) => true,
+      );
 }

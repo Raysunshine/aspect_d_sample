@@ -14,16 +14,19 @@ class AppRoutes {
   static final List<GetPage> pages = [
     GetPage(
       name: AppRoutes.home,
+      title: "首页", //获取不到
       page: () => const HomeWidget(),
       binding: HomeBinding(),
     ),
     GetPage(
       name: AppRoutes.profile,
+      title: "个人中心",
       page: () => const ProfileWidget(),
       binding: ProfileBinding(),
     ),
     GetPage(
       name: AppRoutes.message,
+      title: "即时通讯",
       page: () => const MessageWidget(),
       binding: MessageBinding(),
     )

@@ -13,13 +13,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
-      navigatorObservers: [RouteObserverSample()],
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      initialRoute: AppRoutes.home,
-      getPages: AppRoutes.pages,
-    );
+        title: 'Flutter Demo',
+        navigatorObservers: [RouteObserverSample()],
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        initialRoute: AppRoutes.home,
+        getPages: AppRoutes.pages,
+        routingCallback: (value) {
+          123;
+          /**value 如下：
+           * data class Routing(
+           *    val current:String,
+           *    val previous:String,
+           *    val args:Any,
+           *    val removed:String,  //不知道是什么意思
+           *    val route:Route?,
+           *    val isBack:Boolean,
+           *    val isBottomSheet:Boolean,
+           *    val isDialog:Boolean,
+           * )
+           */
+        });
   }
 }
