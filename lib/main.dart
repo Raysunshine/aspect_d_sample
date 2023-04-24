@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_buried_dot/global_config.dart';
 import 'package:flutter_buried_dot/navigation/app_routes.dart';
 import 'package:flutter_buried_dot/route_observer_sample.dart';
+import 'package:flutter_buried_dot/system_channels.dart';
 import 'package:get/get.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  setupGlobalAppLifecycle();
+
+  setupGlobalAppLifecycleListener();
+  setupGlobalKeyEventListener();
+  setupNavigationListener();
+  setupSystemListener();
+  setupTextInputListener();
+  setupMouseCursorListener();
 
   runApp(const MyApp());
 }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_buried_dot/data/flutter_group.dart';
 import 'package:flutter_buried_dot/navigation/app_routes.dart';
 import 'package:flutter_buried_dot/ui/home/home_action.dart';
@@ -6,10 +7,13 @@ import 'package:get/get.dart';
 class HomeLogic extends GetxController {
   var count = 0.obs;
   var companyName = "".obs;
+  var textEditingController = TextEditingController();
 
   @override
   void onInit() {
     count.value++;
+
+    textEditingController.addListener(_textEditingControllerListener);
 
     super.onInit();
   }
@@ -17,17 +21,17 @@ class HomeLogic extends GetxController {
   void onAction(HomeActionType homeActionType) {
     switch (homeActionType) {
       case HomeActionType.navigateWithArguments:
-        navigateToProfile(); // 带参跳转
+        _navigateToProfile(); // 带参跳转
         break;
       case HomeActionType.plusCountValue:
-        addCount(); // 计数器
+        _addCount(); // 计数器
         break;
     }
   }
 
-  void addCount() => count.value++;
+  void _addCount() => count.value++;
 
-  Future<void> navigateToProfile() async {
+  Future<void> _navigateToProfile() async {
     var flutterGroup = FlutterGroup(groupLeader: "bhLin", groupMemberCount: 7);
 
     var companyNameValue = await Get.toNamed(
@@ -39,5 +43,15 @@ class HomeLogic extends GetxController {
       },
     );
     companyName.value = companyNameValue ?? "UnKnown";
+  }
+
+  @override
+  void onClose() {
+    textEditingController.removeListener(_textEditingControllerListener);
+    super.onClose();
+  }
+
+  void _textEditingControllerListener() {
+    var selection = textEditingController.selection;
   }
 }

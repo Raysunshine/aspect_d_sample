@@ -34,6 +34,16 @@ class HomeWidget extends StatelessWidget {
               onPressed: () => onAction(HomeActionType.navigateWithArguments),
               child: const Text("携带参数跳转到Profile"),
             ),
+            Row(
+              children: [
+                const Text("textInput测试: "),
+                Expanded(
+                  child: TextField(
+                    controller: controller.textEditingController,
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
