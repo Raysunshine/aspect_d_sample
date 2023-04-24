@@ -7,6 +7,4 @@ class MessageAction {
 }
 
 enum MessageActionType {
-  navigateWithArguments,
-  plusCountValue,
-}
+  navigateToRootRoute }

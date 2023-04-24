@@ -9,4 +9,5 @@ class ProfileAction {
 enum ProfileActionType {
   navigateUpWithoutAnything,
   navigateUpWithArguments,
+  navigateToMessage,
 }

@@ -15,10 +15,16 @@ class MessageWidget extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Profile"),
       ),
-      body: Column(
-        children: const [
-          Center(child: Text("count = 1")),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextButton(
+              onPressed: () => onAction(MessageActionType.navigateToRootRoute),
+              child: const Text("多级返回"),
+            ),
+          ],
+        ),
       ),
     );
   }

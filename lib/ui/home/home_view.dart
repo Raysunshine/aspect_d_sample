@@ -17,19 +17,22 @@ class HomeWidget extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextButton(
-              onPressed: () => onAction(HomeActionType.navigateWithArguments),
-              child: const Text("跳转"),
-            ),
             Obx(
               () => Text("count = ${controller.count.value.toString()}"),
             ),
             Obx(
               () => Visibility(
                 visible: controller.companyName.value.isNotEmpty,
-                child: Text("company = ${controller.companyName.value}"),
+                child:
+                    Text("接收到参数 : company = ${controller.companyName.value}"),
               ),
+            ),
+            const SizedBox(height: 50),
+            TextButton(
+              onPressed: () => onAction(HomeActionType.navigateWithArguments),
+              child: const Text("携带参数跳转到Profile"),
             ),
           ],
         ),

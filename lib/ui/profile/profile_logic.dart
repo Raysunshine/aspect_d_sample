@@ -1,3 +1,4 @@
+import 'package:flutter_buried_dot/navigation/app_routes.dart';
 import 'package:flutter_buried_dot/ui/profile/profile_action.dart';
 import 'package:get/get.dart';
 
@@ -15,6 +16,9 @@ class ProfileLogic extends GetxController {
       case ProfileActionType.navigateUpWithArguments:
         navigateUpWithArguments();
         break;
+      case ProfileActionType.navigateToMessage:
+        navigateToProfile();
+        break;
     }
   }
 
@@ -22,6 +26,8 @@ class ProfileLogic extends GetxController {
 
   void navigateUpWithArguments() {
     var companyName = "南京先维";
-    Get.back(result: companyName);
+    Get.back<String>(result: companyName);
   }
+
+  void navigateToProfile() => Get.toNamed(AppRoutes.message);
 }

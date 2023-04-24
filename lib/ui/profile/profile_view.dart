@@ -17,17 +17,23 @@ class ProfileWidget extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
               onPressed: () =>
                   onAction(ProfileActionType.navigateUpWithoutAnything),
               child: const Text("空参返回"),
             ),
-            const SizedBox(height: 100),
+            const SizedBox(height: 50),
             TextButton(
               onPressed: () =>
-                  onAction(ProfileActionType.navigateUpWithoutAnything),
+                  onAction(ProfileActionType.navigateUpWithArguments),
               child: const Text("有参返回"),
+            ),
+            const SizedBox(height: 50),
+            TextButton(
+              onPressed: () => onAction(ProfileActionType.navigateToMessage),
+              child: const Text("跳转到Message页面"),
             ),
           ],
         ),

@@ -27,10 +27,10 @@ class HomeLogic extends GetxController {
 
   void addCount() => count.value++;
 
-  void navigateToProfile() {
+  Future<void> navigateToProfile() async {
     var flutterGroup = FlutterGroup(groupLeader: "bhLin", groupMemberCount: 7);
 
-    Get.toNamed(
+    var companyNameValue = await Get.toNamed(
       AppRoutes.profile,
       arguments: {
         "Android": "Jetpack Compose",
@@ -38,5 +38,6 @@ class HomeLogic extends GetxController {
         "flutterGroup": flutterGroup,
       },
     );
+    companyName.value = companyNameValue ?? "UnKnown";
   }
 }

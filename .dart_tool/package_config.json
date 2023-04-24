@@ -68,6 +68,12 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///C:/Users/Raysu/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.18.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///C:/Users/Raysu/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.5",
       "packageUri": "lib/",
@@ -158,7 +164,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-04-24T05:20:01.604612Z",
+  "generated": "2023-04-24T08:10:32.756968Z",
   "generator": "pub",
   "generatorVersion": "2.19.2"
 }
