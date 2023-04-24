@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
-class RouteObserver<R extends Route<dynamic>> extends NavigatorObserver {
+class RouteObserverSample<R extends Route<dynamic>> extends NavigatorObserver {
   //route是currentDestination，previousRoute是nextDestination
   @override
   void didPop(Route route, Route? previousRoute) {
