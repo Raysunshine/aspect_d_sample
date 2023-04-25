@@ -1,0 +1,140 @@
+Column(direction: vertical, mainAxisAlignment: center, crossAxisAlignment: center, renderObject: RenderFlex#1275b relayoutBoundary=up2 NE
+Center(alignment: Alignment.center, dependencies: [Directionality], renderObject: RenderPositionedBox#b7e14 relayoutBoundary=up1 NEEDS-PA
+KeyedSubtree-[GlobalKey#7ebc9]
+_BodyBuilder
+MediaQuery(MediaQueryData(size: Size(411.4, 891.4), devicePixelRatio: 2.6, textScaleFactor: 1.0, platformBrightness: Brightness.light, pa
+LayoutId-[<_ScaffoldSlot.body>](id: _ScaffoldSlot.body)
+CustomMultiChildLayout(renderObject: RenderCustomMultiChildLayoutBox#55f43 NEEDS-PAINT)
+_ActionsMarker
+Actions(dispatcher: null, actions: {DismissIntent: _DismissDrawerAction#a3a77}, state: _ActionsState#45c27)
+AnimatedBuilder(animation: AnimationController#be8b9(⏭ 1.000; paused), state: _AnimatedState#bffa8)
+DefaultTextStyle(debugLabel: (englishLike bodyMedium 2014).merge(blackMountainView bodyMedium), inherit: false, color: Color(0xdd000000),
+AnimatedDefaultTextStyle(duration: 200ms, debugLabel: (englishLike bodyMedium 2014).merge(blackMountainView bodyMedium), inherit: false,
+_InkFeatures-[GlobalKey#ef766 ink renderer](renderObject: _RenderInkFeatures#636df NEEDS-PAINT)
+NotificationListener<LayoutChangedNotification>
+PhysicalModel(shape: rectangle, borderRadius: BorderRadius.zero, elevation: 0.0, color: Color(0xfffafafa), shadowColor: Color(0xff000000)
+AnimatedPhysicalModel(duration: 200ms, shape: rectangle, borderRadius: BorderRadius.zero, elevation: 0.0, color: Color(0xfffafafa), anima
+Material(type: canvas, color: Color(0xfffafafa), dependencies: [_InheritedTheme, _LocalizationsScope-[GlobalKey#bec69]], state: _Material
+_ScrollNotificationObserverScope
+NotificationListener<ScrollNotification>
+NotificationListener<ScrollMetricsNotification>
+ScrollNotificationObserver(state: ScrollNotificationObserverState#5c126)
+_ScaffoldScope
+Scaffold(dependencies: [Directionality, MediaQuery, UnmanagedRestorationScope, _InheritedTheme, _LocalizationsScope-[GlobalKey#bec69], _S
+HomeWidget
+Semantics(container: false, properties: SemanticsProperties, tooltip: null, renderObject: RenderSemanticsAnnotations#176a1 NEEDS-PAINT)
+Builder
+RepaintBoundary-[GlobalKey#7105d](renderObject: RenderRepaintBoundary#cdc31 NEEDS-PAINT)
+IgnorePointer(ignoring: false, renderObject: RenderIgnorePointer#1815d)
+AnimatedBuilder(animation: ValueNotifier<bool>#75383(false), state: _AnimatedState#6defc)
+SnapshotWidget(dependencies: [MediaQuery], renderObject: _RenderSnapshotWidget#afa6a)
+_ZoomExitTransition(state: _ZoomExitTransitionState#84899)
+SnapshotWidget(dependencies: [MediaQuery], renderObject: _RenderSnapshotWidget#e9294)
+_ZoomEnterTransition(state: _ZoomEnterTransitionState#39ccd)
+DualTransitionBuilder(state: _DualTransitionBuilderState#03299)
+SnapshotWidget(dependencies: [MediaQuery], renderObject: _RenderSnapshotWidget#e8a3c)
+_ZoomExitTransition(state: _ZoomExitTransitionState#40a67)
+SnapshotWidget(dependencies: [MediaQuery], renderObject: _RenderSnapshotWidget#bea8f)
+_ZoomEnterTransition(state: _ZoomEnterTransitionState#cb838)
+DualTransitionBuilder(state: _DualTransitionBuilderState#d76bf)
+_ZoomPageTransition
+AnimatedBuilder(animation: Listenable.merge([AnimationController#639e4(⏭ 1.000; paused; for GetPageRoute<dynamic>(/home))➩ProxyAnimation,
+RepaintBoundary(renderObject: RenderRepaintBoundary#11ecb)
+_FocusMarker
+Semantics(container: false, properties: SemanticsProperties, tooltip: null, renderObject: RenderSemanticsAnnotations#6516c)
+FocusScope(debugLabel: "_ModalScopeState<dynamic> Focus Scope", focusNode: FocusScopeNode#12eb5(_ModalScopeState<dynamic> Focus Scope [PR
+PrimaryScrollController(ScrollController#41a34(no clients))
+_ActionsMarker
+Actions(dispatcher: null, actions: {DismissIntent: _DismissModalAction#310ed}, state: _ActionsState#59ccb)
+Builder
+PageStorage
+Offstage(offstage: false, renderObject: RenderOffstage#fe26a)
+_ModalScopeStatus(active)
+UnmanagedRestorationScope
+RestorationScope(dependencies: [UnmanagedRestorationScope], state: _RestorationScopeState#e59a0)
+AnimatedBuilder(animation: ValueNotifier<String?>#7bb40(null), state: _AnimatedState#0bfb9)
+_ModalScope<dynamic>-[LabeledGlobalKey<_ModalScopeState<dynamic>>#b6d4b](state: _ModalScopeState<dynamic>#acd5d)
+Semantics(container: false, properties: SemanticsProperties, tooltip: null, sortKey: OrdinalSortKey#ca3b7(order: 0.0), renderObject: Rend
+_EffectiveTickerMode(effective mode: enabled)
+TickerMode(state: _TickerModeState#78ec6(requested mode: enabled))
+_OverlayEntryWidget-[LabeledGlobalKey<_OverlayEntryWidgetState>#a5963](state: _OverlayEntryWidgetState#83651)
+_Theatre(skipCount: 0, dependencies: [Directionality], renderObject: _RenderTheatre#7267d)
+Overlay-[LabeledGlobalKey<OverlayState>#4feba](state: OverlayState#bc83c(entries: [OverlayEntry#7a8bf(opaque: true; maintainState: false)
+UnmanagedRestorationScope
+_FocusMarker
+Focus(debugLabel: "Navigator", AUTOFOCUS, focusNode: FocusNode#076a6(Navigator [IN FOCUS PATH]), dependencies: [_FocusMarker], state: _Fo
+_FocusMarker
+Focus(debugLabel: "FocusTraversalGroup", focusNode: FocusNode#6fbce(FocusTraversalGroup [IN FOCUS PATH]), dependencies: [_FocusMarker], s
+_FocusTraversalGroupMarker
+FocusTraversalGroup(policy: ReadingOrderTraversalPolicy#b33ea, state: _FocusTraversalGroupState#c5001)
+AbsorbPointer(absorbing: false, renderObject: RenderAbsorbPointer#e434a)
+Listener(listeners: [down, up, cancel], behavior: deferToChild, renderObject: RenderPointerListener#18d9e)
+HeroControllerScope
+Navigator-[LabeledGlobalKey<NavigatorState>#22637 Key Created by default](dependencies: [HeroControllerScope, UnmanagedRestorationScope,
+_FocusMarker
+Semantics(container: false, properties: SemanticsProperties, tooltip: null, renderObject: RenderSemanticsAnnotations#f5808)
+FocusScope(debugLabel: "Navigator Scope", AUTOFOCUS, dependencies: [_FocusMarker], state: _FocusScopeState#cf224)
+Directionality(textDirection: ltr)
+Builder
+DefaultSelectionStyle
+IconTheme(color: Color(0xdd000000))
+IconTheme(color: MaterialColor(primary value: Color(0xff2196f3)))
+_InheritedCupertinoTheme
+CupertinoTheme(brightness: light, primaryColor: MaterialColor(primary value: Color(0xff2196f3)), primaryContrastingColor: Color(0xfffffff
+_InheritedTheme
+Theme(ThemeData#c1f1d, dependencies: [DefaultSelectionStyle])
+AnimatedTheme(duration: 200ms, state: _AnimatedThemeState#134a7(ticker inactive, ThemeDataTween(ThemeData#c1f1d → ThemeData#c1f1d)))
+DefaultSelectionStyle
+_ScaffoldMessengerScope
+ScaffoldMessenger-[LabeledGlobalKey<ScaffoldMessengerState>#c8fa5](dependencies: [MediaQuery], state: ScaffoldMessengerState#f93e8)
+Builder(dependencies: [MediaQuery])
+DefaultTextStyle(debugLabel: fallback style; consider putting your text in a Material, inherit: true, color: Color(0xd0ff0000), family: m
+CustomPaint(renderObject: RenderCustomPaint#fd8c3)
+Banner("DEBUG", textDirection: ltr, location: topEnd, Color(0xa0b71c1c), text inherit: true, text color: Color(0xffffffff), text size: 10
+CheckedModeBanner("DEBUG")
+Title(title: "Flutter Demo", color: Color(0xff2196f3))
+Directionality(textDirection: ltr)
+_LocalizationsScope-[GlobalKey#bec69]
+Semantics(container: false, properties: SemanticsProperties, tooltip: null, textDirection: ltr, renderObject: RenderSemanticsAnnotations#
+Localizations(locale: en_US, delegates: [DefaultMaterialLocalizations.delegate(en_US), DefaultCupertinoLocalizations.delegate(en_US), Def
+MediaQuery(MediaQueryData(size: Size(411.4, 891.4), devicePixelRatio: 2.6, textScaleFactor: 1.0, platformBrightness: Brightness.light, pa
+_MediaQueryFromWindow(state: _MediaQueryFromWindowState#f7442)
+Semantics(container: false, properties: SemanticsProperties, tooltip: null, renderObject: RenderSemanticsAnnotations#58419)
+_FocusMarker
+Focus(debugLabel: "Shortcuts", dependencies: [_FocusMarker], state: _FocusState#93d65)
+Shortcuts(manager: ShortcutManager#2a729(shortcuts: {}), shortcuts: {}, state: _ShortcutsState#a7dd0)
+_ShortcutRegistrarMarker
+ShortcutRegistrar(state: _ShortcutRegistrarState#f5090)
+TapRegionSurface(renderObject: RenderTapRegionSurface#c03b4)
+_FocusMarker
+Focus(debugLabel: "FocusTraversalGroup", focusNode: FocusNode#4928b(FocusTraversalGroup [IN FOCUS PATH]), dependencies: [_FocusMarker], s
+_FocusTraversalGroupMarker
+FocusTraversalGroup(policy: ReadingOrderTraversalPolicy#b33ea, state: _FocusTraversalGroupState#680f5)
+_ActionsMarker
+Actions(dispatcher: null, actions: {DoNothingIntent: DoNothingAction#9da66, DoNothingAndStopPropagationIntent: DoNothingAction#8ddb0, Req
+Semantics(container: false, properties: SemanticsProperties, tooltip: null, renderObject: RenderSemanticsAnnotations#61f04)
+_FocusMarker
+Focus(debugLabel: "Shortcuts", dependencies: [_FocusMarker], state: _FocusState#14751)
+Shortcuts(shortcuts: <Default Text Editing Shortcuts>, state: _ShortcutsState#bf156)
+DefaultTextEditingShortcuts
+Semantics(container: false, properties: SemanticsProperties, tooltip: null, renderObject: RenderSemanticsAnnotations#31104)
+_FocusMarker
+Focus(debugLabel: "Shortcuts", dependencies: [_FocusMarker], state: _FocusState#4da6a)
+Shortcuts(shortcuts: <Default WidgetsApp Shortcuts>, state: _ShortcutsState#6ee35)
+_SharedAppModel
+SharedAppData(state: _SharedAppDataState#921ac)
+UnmanagedRestorationScope
+RestorationScope(dependencies: [UnmanagedRestorationScope], state: _RestorationScopeState#d24bd)
+UnmanagedRestorationScope
+RootRestorationScope(state: _RootRestorationScopeState#fe7bf)
+WidgetsApp-[GlobalObjectKey _MaterialAppState#4da33](state: _WidgetsAppState#d80a2)
+Semantics(container: false, properties: SemanticsProperties, tooltip: null, renderObject: RenderSemanticsAnnotations#8e5f9)
+_FocusMarker
+Focus(state: _FocusState#586c3)
+HeroControllerScope
+ScrollConfiguration(behavior: MaterialScrollBehavior)
+MaterialApp(state: _MaterialAppState#4da33)
+GetBuilder<GetMaterialController>(state: GetBuilderState<GetMaterialController>#49c79)
+GetMaterialApp
+MyApp
+[root](renderObject: RenderView#3e722)

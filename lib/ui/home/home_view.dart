@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_buried_dot/component/custom_split_path_button.dart';
+import 'package:flutter_buried_dot/component/rely_on_value_key_button.dart';
 import 'package:flutter_buried_dot/ui/home/home_action.dart';
 import 'package:get/get.dart';
 
 import 'home_logic.dart';
 
-class HomeWidget extends StatelessWidget {
+abstract class Listener extends StatelessWidget {
+  const Listener({super.key});
+}
+
+class HomeWidget extends Listener {
   const HomeWidget({super.key});
 
   HomeLogic get controller => Get.find<HomeLogic>();
@@ -45,6 +51,16 @@ class HomeWidget extends StatelessWidget {
                 ),
                 const SizedBox(width: 30),
               ],
+            ),
+            const SizedBox(height: 50),
+            CustomSplitPathButton(
+              symbol: "自定义截取路径",
+              doSomething: () => onAction(HomeActionType.doSomething),
+            ),
+            RelyOnValueKeyButton(
+              key: const ValueKey("HomeWidget/Scaffold/Center/Column/收集信息的按钮"),
+              symbol: "自定义key",
+              doSomething: () => onAction(HomeActionType.doSomething),
             ),
           ],
         ),

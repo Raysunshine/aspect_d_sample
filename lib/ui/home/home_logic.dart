@@ -28,6 +28,7 @@ class HomeLogic extends GetXControllerWithListener {
         _navigateToProfile(); // 带参跳转
         break;
       case HomeActionType.plusCountValue:
+      case HomeActionType.doSomething:
         _addCount(); // 计数器
         break;
     }

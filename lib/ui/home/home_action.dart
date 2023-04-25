@@ -9,4 +9,5 @@ class HomeAction {
 enum HomeActionType {
   navigateWithArguments,
   plusCountValue,
+  doSomething,
 }
