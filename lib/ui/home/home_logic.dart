@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_buried_dot/commonListener.dart';
 import 'package:flutter_buried_dot/data/flutter_group.dart';
+import 'package:flutter_buried_dot/domain/common_listener.dart';
+import 'package:flutter_buried_dot/domain/page_lifecycle_mixin.dart';
 import 'package:flutter_buried_dot/navigation/app_routes.dart';
 import 'package:flutter_buried_dot/ui/home/home_action.dart';
 import 'package:get/get.dart';
 
-class HomeLogic extends GetxController {
+class HomeLogic extends GetXControllerWithListener {
   var count = 0.obs;
   var companyName = "".obs;
   var textEditingController = TextEditingController();

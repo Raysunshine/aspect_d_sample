@@ -13,7 +13,9 @@ class MessageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Profile"),
+        title: Obx(
+          () => Text("Profile ${controller.routeTitle.value}"),
+        ),
       ),
       body: Center(
         child: Column(

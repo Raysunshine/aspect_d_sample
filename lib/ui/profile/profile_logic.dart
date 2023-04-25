@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_buried_dot/commonListener.dart';
+import 'package:flutter_buried_dot/domain/common_listener.dart';
+import 'package:flutter_buried_dot/domain/page_lifecycle_mixin.dart';
 import 'package:flutter_buried_dot/navigation/app_routes.dart';
 import 'package:flutter_buried_dot/ui/profile/profile_action.dart';
 import 'package:get/get.dart';
 
-class ProfileLogic extends GetxController {
+class ProfileLogic extends GetXControllerWithListener {
   var textEditingController = TextEditingController();
 
   @override

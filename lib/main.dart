@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_buried_dot/domain/route_observer_sample.dart';
+import 'package:flutter_buried_dot/domain/system_channels.dart';
 import 'package:flutter_buried_dot/navigation/app_routes.dart';
-import 'package:flutter_buried_dot/route_observer_sample.dart';
-import 'package:flutter_buried_dot/system_channels.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
            *    val current:String,
            *    val previous:String,
            *    val args:Any,
-           *    val removed:String,  //不知道是什么意思
+           *    val removed:String,  //不知道是什么意思，源码是 某个routeName
            *    val route:Route?,
            *    val isBack:Boolean,
            *    val isBottomSheet:Boolean,
