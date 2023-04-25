@@ -21,6 +21,10 @@ output.json
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
+.idea
+build
+flutter_buried_dot.iml
+.dart_tool
 
 # Keystore files
 *.jks
