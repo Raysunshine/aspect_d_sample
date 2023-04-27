@@ -20,23 +20,18 @@ void textEditingControllerListener(
 
 /// context.visitAncestorElements((element) {}
 /// 是否有方法可以在其中判断Element.Widget是自己定义的。
-void outputButtonInfo(BuildContext context) {
+void outputButtonInfo(BuildContext context, String buryPageSymbol) async {
+  context.findAncestorRenderObjectOfType();
   var index = 0;
   var elementTree = <String>[];
   elementTree.add(context.widget.runtimeType.toString());
   context.visitAncestorElements((element) {
     var leaf = element.widget.runtimeType.toString();
-    index++;
-    if (index <= 2) {
+    if (index != 1 && !leaf.startsWith("_") && !leaf.contains("<")) {
       elementTree.add(leaf);
-    } else {
-      if (element.widget is Scaffold) {
-        elementTree.add(leaf);
-        index = 9999;
-      }
-      if (index == 10000) {
-        elementTree.add(leaf);
-      }
+    }
+    if (leaf == buryPageSymbol) {
+      index = 1;
     }
     return true;
   });

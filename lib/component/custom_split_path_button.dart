@@ -6,16 +6,20 @@ class CustomSplitPathButton extends StatelessWidget {
     super.key,
     required this.symbol,
     required this.doSomething,
+    this.buryPageSymbol,
   });
 
   final String symbol;
   final Function() doSomething;
+  final String? buryPageSymbol;
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {
-        outputButtonInfo(context);
+        buryPageSymbol != null
+            ? outputButtonInfo(context, buryPageSymbol ?? "")
+            : null;
         doSomething.call();
       },
       child: Text(symbol),

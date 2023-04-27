@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_buried_dot/component/custom_split_path_button.dart';
 import 'package:flutter_buried_dot/data/flutter_group.dart';
 import 'package:flutter_buried_dot/domain/common_listener.dart';
 import 'package:flutter_buried_dot/domain/page_lifecycle_mixin.dart';
@@ -31,6 +32,9 @@ class HomeLogic extends GetXControllerWithListener {
       case HomeActionType.doSomething:
         _addCount(); // 计数器
         break;
+      case HomeActionType.showDialog:
+        Get.dialog(const DialogPage());
+        break;
     }
   }
 
@@ -56,5 +60,24 @@ class HomeLogic extends GetXControllerWithListener {
       () => textEditingControllerListener(textEditingController),
     );
     super.onClose();
+  }
+}
+
+class DialogPage extends StatelessWidget {
+  const DialogPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.white,
+      height: 300,
+      width: 200,
+      child: Center(
+        child: CustomSplitPathButton(
+          symbol: 'Click',
+          doSomething: () {},
+        ),
+      ),
+    );
   }
 }

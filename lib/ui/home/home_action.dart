@@ -10,4 +10,5 @@ enum HomeActionType {
   navigateWithArguments,
   plusCountValue,
   doSomething,
+  showDialog
 }

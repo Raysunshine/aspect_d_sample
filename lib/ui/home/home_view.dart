@@ -6,11 +6,7 @@ import 'package:get/get.dart';
 
 import 'home_logic.dart';
 
-abstract class Listener extends StatelessWidget {
-  const Listener({super.key});
-}
-
-class HomeWidget extends Listener {
+class HomeWidget extends StatelessWidget {
   const HomeWidget({super.key});
 
   HomeLogic get controller => Get.find<HomeLogic>();
@@ -53,14 +49,23 @@ class HomeWidget extends Listener {
               ],
             ),
             const SizedBox(height: 50),
-            CustomSplitPathButton(
-              symbol: "自定义截取路径",
-              doSomething: () => onAction(HomeActionType.doSomething),
+            Center(
+              child: SizedBox(
+                child: CustomSplitPathButton(
+                  symbol: "自定义截取路径",
+                  doSomething: () => onAction(HomeActionType.doSomething),
+                  buryPageSymbol: "HomeWidget",
+                ),
+              ),
             ),
             RelyOnValueKeyButton(
               key: const ValueKey("HomeWidget/Scaffold/Center/Column/收集信息的按钮"),
               symbol: "自定义key",
               doSomething: () => onAction(HomeActionType.doSomething),
+            ),
+            TextButton(
+              onPressed: () => onAction(HomeActionType.showDialog),
+              child: const Text("Dialog"),
             ),
           ],
         ),

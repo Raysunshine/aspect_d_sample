@@ -23,26 +23,29 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: 'Flutter Demo',
-        navigatorObservers: [RouteObserverSample()],
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        initialRoute: AppRoutes.home,
-        getPages: AppRoutes.pages,
-        routingCallback: (value) {
-          /**value 如下：
-           * data class Routing(
-           *    val current:String,
-           *    val previous:String,
-           *    val args:Any,
-           *    val removed:String,  //不知道是什么意思，源码是 某个routeName
-           *    val route:Route?,
-           *    val isBack:Boolean,
-           *    val isBottomSheet:Boolean,
-           *    val isDialog:Boolean,
-           * )
-           */
-        });
+      title: 'Flutter Demo',
+      navigatorObservers: [
+        RouteObserverSample(),
+      ],
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      initialRoute: AppRoutes.home,
+      getPages: AppRoutes.pages,
+      routingCallback: (value) {
+        /**value 如下:
+         * data class Routing(
+         *    val current:String,
+         *    val previous:String,
+         *    val args:Any,
+         *    val removed:String,
+         *    val route:Route?,
+         *    val isBack:Boolean,
+         *    val isBottomSheet:Boolean,
+         *    val isDialog:Boolean,
+         * )
+         */
+      },
+    );
   }
 }
